@@ -1,0 +1,211 @@
+{
+    "id": "_ID_",
+    "jsonrpc": "2.0",
+    "method": "hub.scenes.create",
+    "params": {
+        "enabled": true,
+        "group_id": "",
+        "is_group": false,
+        "name": "compareNumbers",
+        "parent_id": "",
+        "then": [],
+        "when": [
+            {
+                "blockOptions": {
+                    "method": {
+                        "args": { 
+                        "blocks": "blocks" 
+                    },
+                        "name": "and"
+                    }
+                },
+                "blockType": "when",
+                "fields": [
+                    {
+                        "name": "blocks",
+                        "type": "blocks",
+                        "value": [
+                            {
+                                "blockOptions": {
+                                    "method": {
+                                        "name": "compareNumbers",
+                                        "args": {
+                                        "expression": "expression",
+                                        "comparator": "comparator",
+                                        "value": "value"
+                                        }
+                                    }
+                                },
+                                "blockType": "when",
+                                "fields": [
+                                    {
+                                        "name": "item",
+                                        "type": "expression",
+                                        "value": "TwoPlusTwo"
+                                    },
+                                    {
+                                        "name": "comparator",
+                                        "type": "string",
+                                        "value": "<"
+                                    },
+                                    {
+                                        "name": "value",
+                                        "type": "item",
+                                        "value": "63204c10e8851a125e3f254a"
+                                    }
+                                ]
+                            },
+                            {
+                                "blockOptions": {
+                                    "method": {
+                                        "args": { 
+                                        "blocks": "blocks" 
+                                    },
+                                        "name": "and"
+                                    }
+                                },
+                                "blockType": "when",
+                                "fields": [
+                                    {
+                                        "name": "blocks",
+                                        "type": "blocks",
+                                        "value": [
+                                            {
+                                                "blockOptions": {
+                                                    "method": {
+                                                        "name": "compareNumbers",
+                                                        "args": {
+                                                        "expression": "expression",
+                                                        "comparator": "comparator",
+                                                        "value": "value"
+                                                        }
+                                                    }
+                                                },
+                                                "blockType": "when",
+                                                "fields": [
+                                                    {
+                                                        "name": "item",
+                                                        "type": "expression",
+                                                        "value": "63204c10e8851a125e3f254a"
+                                                    },
+                                                    {
+                                                        "name": "comparator",
+                                                        "type": "string",
+                                                        "value": ">"
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "type": "item",
+                                                        "value": "TwoPlusTwo"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+
+
+{
+    "id": "_ID_",
+    "jsonrpc": "2.0",
+    "method": "hub.scenes.create",
+    "params": {
+        "enabled": true,
+        "group_id": "",
+        "is_group": false,
+        "name": "compareNumbers",
+        "parent_id": "",
+        "then": [],
+        "when": [
+            {
+                "blockType": "when",
+                "blockOptions": {
+                    "method": {
+                        "name": "and",
+                        "args": {
+                            "blocks": "blocks"
+                        }
+                    }
+                },
+                "fields": [
+                    {
+                        "name": "blocks",
+                        "type": "blocks",
+                        "value": [
+                            {
+                                "blockOptions": {
+                                    "method": {
+                                        "name": "compareNumbers",
+                                        "args": {
+                                            "expression": "expression",
+                                            "comparator": "comparator",
+                                            "value": "value"
+                                        }
+                                    }
+                                },
+                                "blockType": "when",
+                                "fields": [
+                                    {
+                                        "name": "item",
+                                        "type": "expression",
+                                        "value": "TwoPlusTwo"
+                                    },
+                                    {
+                                        "name": "comparator",
+                                        "type": "string",
+                                        "value": "<"
+                                    },
+                                    {
+                                        "name": "value",
+                                        "type": "item",
+                                        "value": "63204c10e8851a125e3f254a"
+                                    }
+                                ]
+                            },
+                            {
+                                "blockType":"when",
+                                    "blockOptions": {
+                                         "method": {
+                                        "name": "compareNumbers",
+                                        "args": {
+                                            "expression": "expression",
+                                            "comparator": "comparator",
+                                            "value": "value"
+                                        }
+                                    }
+                                },
+                            },
+                            {
+                                "blockType": "when",
+                                "fields": [
+                                    {
+                                        "name": "item",
+                                        "type": "item",
+                                        "value": "63204c10e8851a125e3f254a"
+                                    },
+                                    {
+                                        "name": "comparator",
+                                        "type": "string",
+                                        "value": ">"
+                                    },
+                                    {
+                                        "name": "value",
+                                        "type": "expression",
+                                        "value": "TwoPlusTwo"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
